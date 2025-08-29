@@ -1,0 +1,1 @@
+gcc VisualCompress.c lodepng.c -s -Wall -Wextra -Wpedantic -o visualcompress.exe
