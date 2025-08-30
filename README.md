@@ -2,7 +2,9 @@
 
 **Compress any file into a PNG and back.**
 
-VisualCompress is a simple CLI tool to convert files into viewable PNGs by encoding their bytes as RGB values for the pixels of the resulting image. 
+VisualCompress is a simple CLI tool to convert files into viewable PNGs by encoding their bytes as RGB values for the pixels of the resulting image.
+
+The "compression" comes from the PNG compression (lossless of course) which can decrease the size a lot if the original file had low entropy. With high entropy files like the contents of a compressed mp3 container the decrease in size is negligible, for very small files like 20b it usually increases the size a bit.
 
 **Example: Encode test.mp3 into test.png and decode test.png back to result.mp3**
 
